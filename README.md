@@ -19,6 +19,16 @@ docker-compose up -d
 docker-compose down
 ```
 
+## heimdall
+
+**heimdall** 是一个导航首页的服务，nas/vps 上的服务多了，可以配置一个首页，方便使用。
+
+个人默认导出非 80 端口，通过 nginx 在 80/443 端口反代
+
+## komga
+
+**komga** 是一个网页看 pdf 的工具，个人主要用这个看漫画。
+
 ## nas-tools
 
 **nas tools** 是 NAS 媒体库资源归集、整理自动化工具，搭配了 **emby（媒体播放）** 和 **qBittorrent（bt 下载）**。
@@ -29,12 +39,6 @@ emby，我选择关闭服务器解码功能，由客户端进行解码，减轻�
 
 qBittorrent，默认的账号 admin，密码 adminadmin。
 
-## heimdall
+## nginx
 
-**heimdall** 是一个导航首页的服务，nas/vps 上的服务多了，可以配置一个首页，方便使用。
-
-个人默认导出非 80 端口，通过 nginx 在 80/443 端口反代
-
-## komga
-
-**komga** 是一个网页看 pdf 的工具，个人主要用这个看漫画。
+**nginx** 个人使用 nginx 反代不同服务，使用局域网域名（smartdns），不用记忆各种端口。
