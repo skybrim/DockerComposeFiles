@@ -1,0 +1,55 @@
+version: "3"
+
+services:
+  
+  qbittorrent:
+    image: ghcr.io/linuxserver/qbittorrent
+    container_name: qbittorrent
+    restart: unless-stopped
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Shanghai
+      - WEBUI_PORT=9092
+    volumes:
+      - your_qbittorrent_config_fold:/config
+      - your_download_fold:/downloads
+    ports:
+      - 51414:51414
+      - 51414:51414/udp
+      - 9092:9092
+
+  emby:
+    image: ghcr.io/linuxserver/emby
+    container_name: emby
+    restart: unless-stopped
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Shanghai
+    volumes:
+      - your_emby_config_fold:/config
+      - your_media_fold:/data/media
+    ports:
+      - 8096:8096
+      - 8920:8920
+
+  nastools:
+    image: jxxghp/nas-tools:2.7.2
+    container_name: nastools
+    restart: unless-stopped
+    environment:
+      - PUID=1026
+      - PGID=101
+      - TZ=Asia/Shanghai
+      - UMASK=022
+    ports:
+      - 3000:3000
+    volumes:
+      - your_nastool_fold:/config
+      - your_download_fold:/share/Download
+      - your_media_fold:/share/media
+
+networks:
+  default:
+    driver: bridge
