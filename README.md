@@ -34,3 +34,7 @@ qBittorrent，默认的账号 admin，密码 adminadmin。
 **heimdall** 是一个导航首页的服务，nas/vps 上的服务多了，可以配置一个首页，方便使用。
 
 个人默认导出非 80 端口，通过 nginx 在 80/443 端口反代
+
+## komga
+
+**komga** 是一个网页看 pdf 的工具，个人主要用这个看漫画。
