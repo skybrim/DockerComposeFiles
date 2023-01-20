@@ -35,7 +35,7 @@ services:
       - 8920:8920
 
   nastools:
-    image: jxxghp/nas-tools:2.7.2
+    image: jxxghp/nas-tools:2.8.0
     container_name: nastools
     restart: unless-stopped
     environment:
