@@ -19,6 +19,10 @@ docker-compose up -d
 docker-compose down
 ```
 
+## dos-game
+
+**dos-game**，一些经典游戏怀旧
+
 ## heimdall
 
 **heimdall** 是一个导航首页的服务，nas/vps 上的服务多了，可以配置一个首页，方便使用。
@@ -41,7 +45,7 @@ qBittorrent，默认的账号 admin，密码 adminadmin。
 
 ## nginx
 
-**nginx** 个人使用 nginx 反代不同服务，使用局域网域名（smartdns），不用记忆各种端口。
+**nginx** 个人使用 nginx 反代不同服务，使用局域网域名（SmartDns），不用记忆各种端口。
 
 ## SmartDns
 
