@@ -50,6 +50,12 @@ qBittorrent，默认的账号 admin，密码 adminadmin。
 ## rsshub
 
 **rsshub**，帮助将一些服务转为 rss 订阅，具体使用见[rss 官网](https://docs.rsshub.app/)。
+由于服务公开，我的 docker 设置里加了一些对服务器资源使用的限制，防止被打爆。
+
+## tiny tiny rss
+
+**tiny tiny rss**，自建的集中拉取 rss 的服务，这个服务个人觉得挺耗费服务器性能的，加了资源使用的限制，配置低的慎用。
+使用的是这位大佬的配置，请自行查看[文档](https://ttrss.henry.wang/zh)。
 
 ## SmartDns
 
