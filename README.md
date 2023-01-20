@@ -47,6 +47,10 @@ qBittorrent，默认的账号 admin，密码 adminadmin。
 
 **nginx** 个人使用 nginx 反代不同服务，使用局域网域名（SmartDns），不用记忆各种端口。
 
+## rsshub
+
+**rsshub**，帮助将一些服务转为 rss 订阅，具体使用见[rss 官网](https://docs.rsshub.app/)。
+
 ## SmartDns
 
 [SmartDns 官方](https://github.com/pymumu/smartdns)
