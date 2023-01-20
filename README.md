@@ -28,3 +28,9 @@ nas tools，设置参考 nas tool [官方库](https://github.com/jxxghp/nas-tool
 emby，我选择关闭服务器解码功能，由客户端进行解码，减轻服务端压力。emby 的服务端解码功能在每个用户的用户设置里关闭。
 
 qBittorrent，默认的账号 admin，密码 adminadmin。
+
+## heimdall
+
+**heimdall** 是一个导航首页的服务，nas/vps 上的服务多了，可以配置一个首页，方便使用。
+
+个人默认导出非 80 端口，通过 nginx 在 80/443 端口反代
