@@ -33,7 +33,7 @@ docker-compose down
 
 **nas tools** 是 NAS 媒体库资源归集、整理自动化工具，搭配了 **emby（媒体播放）** 和 **qBittorrent（bt 下载）**。
 
-nas tools，设置参考 nas tool [官方库](https://github.com/jxxghp/nas-tools/wiki)。
+nas tools，设置参考 [nas tool 官方库](https://github.com/jxxghp/nas-tools/wiki)。
 
 emby，我选择关闭服务器解码功能，由客户端进行解码，减轻服务端压力。emby 的服务端解码功能在每个用户的用户设置里关闭。
 
@@ -42,3 +42,14 @@ qBittorrent，默认的账号 admin，密码 adminadmin。
 ## nginx
 
 **nginx** 个人使用 nginx 反代不同服务，使用局域网域名（smartdns），不用记忆各种端口。
+
+## SmartDns
+
+[SmartDns 官方](https://github.com/pymumu/smartdns)
+[Sukka 的文章：我有特别的 DNS 配置和使用技巧](https://blog.skk.moe/post/i-have-my-unique-dns-setup/)
+
+**SmartDns**，这个没有用 docker 安装，直接使用 apt、yun 等安装即可。
+这里只说两点用处，第一个是屏蔽广告，第二个是本地域名解析；需要分流的自行研究。
+如果只需要屏蔽广告，可以考虑 AdGuard。
+
+屏蔽广告策略 [anti-ad](https://anti-ad.net/anti-ad-for-smartdns.conf)。
